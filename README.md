@@ -25,6 +25,7 @@ Attendance Reporting pages.
 
 ## Alternative
 
-Paste
-'javascript:(()=>{document.querySelectorAll('select').forEach(s=>{if([...s.options].some(o=>o.text==='Y')){s.value='Y';s.dispatchEvent(new Event('change',{bubbles:true}));}});})();'
-as a bookmark in your preferred browser. Click it when you want it to run.
+Paste the following as a bookmark in your preferred browser:
+
+```javascript
+javascript:(()=>{document.querySelectorAll('select').forEach(s=>{if([...s.options].some(o=>o.text==='Y')){s.value='Y';s.dispatchEvent(new Event('change',{bubbles:true}));}});})();
